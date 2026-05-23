@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MuSRIXz</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+</head>
+
+<body>
+
+  <div class="background"></div>
+
+  <div class="container">
+
+    <div class="sidebar">
+      <h1>Mu$ic</h1>
+
+      <ul>
+        <li><i class="fa fa-home"></i> Home</li>
+        <li><i class="fa fa-music"></i> Playlist</li>
+        <li><i class="fa fa-heart"></i> Favorite</li>
+      </ul>
+    </div>
+
+    <div class="player">
+
+      <img src="img/cover.jpg" class="cover">
+
+      <h2>Late Night Drive</h2>
+      <p>Aesthetic Vibes</p>
+
+      <audio id="music" controls>
+        <source src="musik/lagu.mp3" type="audio/mp3">
+      </audio>
+
+      <div class="controls">
+        <button onclick="prevSong()">
+          <i class="fa fa-backward"></i>
+        </button>
+
+        <button onclick="playMusic()">
+          <i class="fa fa-play"></i>
+        </button>
+
+        <button onclick="pauseMusic()">
+          <i class="fa fa-pause"></i>
+        </button>
+
+        <button onclick="nextSong()">
+          <i class="fa fa-forward"></i>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
